@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="af5f9faa-2320-4953-bcdf-a1c6b2771aca" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/208F92FC-7835-46F9-ABBE-643BFC23920C/a6/2d750052/Handles.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.github.siccity.xnode@1.8.0/Scripts/Node.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Plugins/CustomGraphs-XnodeEnhancement/Script/Nodes/Generator/BillowNode.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.github.siccity.xnode@1.8.0/Scripts/NodePort.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/00A477ED-1ABF-4030-BE64-6C3244BD3667/0c/279060dc/Event.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/TestGrid.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Plugins/CustomGraphs-XnodeEnhancement/Script/Nodes/SubGraph.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.github.siccity.xnode@1.8.0/Scripts/NodeGraph.cs" root0="SKIP_HIGHLIGHTING" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/Assets/unity-wave-function-collapse/TilePainter.cs" />
+        <option value="$PROJECT_DIR$/Assets/unity-wave-function-collapse/OverlapWFC.cs" />
+        <option value="$PROJECT_DIR$/Assets/unity-wave-function-collapse/Training.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/NoiseGenerator.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/WorldLayer.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Noise/NoiseGenerator.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Noise/Threshold.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Noise/Mapping.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Noise/WorldLayer.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Noise/WorldGen.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Nodes/NoiseNode.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Nodes/RandomIntNode.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Nodes/Utils/Renderer.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Nodes/Utils/Editor/RendererEditor.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Nodes/PerlinNode.cs" />
+        <option value="$PROJECT_DIR$/Assets/Plugins/CustomGraphs-XnodeEnhancement/Script/Nodes/SubGraph.cs" />
+        <option value="$PROJECT_DIR$/Assets/Plugins/CustomGraphs-XnodeEnhancement/Script/Serializer/SerializerContainer.cs" />
+        <option value="$PROJECT_DIR$/Assets/Plugins/CustomGraphs-XnodeEnhancement/Script/Nodes/BlackBoardVariable.cs" />
+        <option value="$PROJECT_DIR$/Assets/Plugins/CustomGraphs-XnodeEnhancement/Script/Inspector/DefaultGraph.cs" />
+        <option value="$PROJECT_DIR$/Assets/Plugins/LibNoise/GradientPresets.cs" />
+        <option value="$PROJECT_DIR$/Assets/Plugins/CustomGraphs-XnodeEnhancement/Script/Nodes/Generator/BillowNode.cs" />
+        <option value="$PROJECT_DIR$/Assets/Plugins/CustomGraphs-XnodeEnhancement/Script/Nodes/Utils/QualityNode.cs" />
+        <option value="$PROJECT_DIR$/Assets/Plugins/CustomGraphs-XnodeEnhancement/Script/Nodes/Graph/Editor/LibnoiseGraphEditor.cs" />
+        <option value="$PROJECT_DIR$/Assets/Plugins/CustomGraphs-XnodeEnhancement/Script/Variables/GenericDictionnary.cs" />
+        <option value="$PROJECT_DIR$/Assets/Plugins/CustomGraphs-XnodeEnhancement/Script/Nodes/Generator/CheckerNode.cs" />
+        <option value="$PROJECT_DIR$/Assets/Plugins/CustomGraphs-XnodeEnhancement/Script/Nodes/Generator/RidgedMultifractalNode.cs" />
+        <option value="$PROJECT_DIR$/Assets/Plugins/CustomGraphs-XnodeEnhancement/Script/Nodes/Generator/VoronoiNode.cs" />
+        <option value="$PROJECT_DIR$/Assets/Plugins/CustomGraphs-XnodeEnhancement/Script/Nodes/LibnoiseNode.cs" />
+        <option value="$PROJECT_DIR$/Assets/Plugins/CustomGraphs-XnodeEnhancement/Script/Nodes/AILeaf.cs" />
+        <option value="$PROJECT_DIR$/Assets/Plugins/LibNoise/SerializableLibnoise/SerializableModuleBase.cs" />
+        <option value="$PROJECT_DIR$/Assets/Plugins/LibNoise/Noise2D.cs" />
+        <option value="$PROJECT_DIR$/Assets/Plugins/LibNoise/Utils.cs" />
+        <option value="$PROJECT_DIR$/Assets/Plugins/CustomGraphs-XnodeEnhancement/Script/Nodes/Generator/PerlinNode.cs" />
+        <option value="$PROJECT_DIR$/Assets/TestGrid.cs" />
+        <option value="$PROJECT_DIR$/Assets/Plugins/CustomGraphs-XnodeEnhancement/Script/Nodes/Graph/LibnoiseGraph.cs" />
+        <option value="$PROJECT_DIR$/Assets/Plugins/LibNoise/Generator/Perlin.cs" />
+        <option value="$PROJECT_DIR$/Assets/Plugins/CustomGraphs-XnodeEnhancement/Script/Nodes/Graph/RootModuleBase.cs" />
+        <option value="$PROJECT_DIR$/Assets/Plugins/CustomGraphs-XnodeEnhancement/Script/Nodes/Graph/WorldGenOutput.cs" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectId" id="213RqZQAXEXJc0OTlURBqYquOJG" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="Discover.Launch.Via.Unity" value="true" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="settings.editor.selected.configurable" value="preferences.sourceCode.C#" />
+    <property name="vue.rearranger.settings.migration" value="true" />
+  </component>
+  <component name="RunManager" selected="Attach to Unity Editor.Attach to Unity Editor">
+    <configuration name="Attach to Unity Editor &amp; Play" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="UNITY_ATTACH_AND_PLAY" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost">
+      <option name="allowRunningInParallel" value="false" />
+      <option name="listenPortForConnections" value="false" />
+      <option name="pid" />
+      <option name="selectedOptions">
+        <set />
+      </option>
+      <method v="2" />
+    </configuration>
+    <configuration name="Attach to Unity Editor" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="Unity Debug" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost">
+      <option name="allowRunningInParallel" value="false" />
+      <option name="listenPortForConnections" value="false" />
+      <option name="pid" />
+      <option name="selectedOptions">
+        <set />
+      </option>
+      <method v="2" />
+    </configuration>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="af5f9faa-2320-4953-bcdf-a1c6b2771aca" name="Default Changelist" comment="" />
+      <created>1637167980746</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1637167980746</updated>
+      <workItem from="1637167992286" duration="4278000" />
+      <workItem from="1637524485098" duration="2739000" />
+      <workItem from="1638465797843" duration="1527000" />
+      <workItem from="1638505110813" duration="1990000" />
+      <workItem from="1638561377889" duration="7286000" />
+      <workItem from="1638570498957" duration="3476000" />
+      <workItem from="1638651879168" duration="2252000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="UnityProjectConfiguration" hasMinimizedUI="true" />
+  <component name="UnityUnitTestConfiguration" currentTestLauncher="EditMode" />
+  <component name="VcsManagerConfiguration">
+    <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="461" y="169" key="SettingsEditor" timestamp="1638564730631">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state x="461" y="169" key="SettingsEditor/-1920.179.1920.1050/0.0.1920.1050@0.0.1920.1050" timestamp="1638466400166" />
+    <state x="461" y="169" key="SettingsEditor/0.0.1920.1050@0.0.1920.1050" timestamp="1638564730631" />
+    <state x="435" y="190" width="1402" height="1038" key="dock-window-1" timestamp="1637525887539">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state x="435" y="190" width="1402" height="1038" key="dock-window-1/-1920.179.1920.1050/0.0.1920.1050@0.0.1920.1050" timestamp="1637525887539" />
+    <state x="623" y="227" width="672" height="678" key="search.everywhere.popup" timestamp="1638570756668">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state x="623" y="227" width="672" height="678" key="search.everywhere.popup/0.0.1920.1050@0.0.1920.1050" timestamp="1638570756668" />
+  </component>
+</project>

@@ -1,0 +1,30 @@
+<set>
+  <tiles>
+<tile name="Assets/Prefabs/LevelTiles/Prairie/Prairie_GroundTile_03" symmetry="X" weight="1.0"/>
+<tile name="Assets/Prefabs/LevelTiles/Prairie/Prairie_GroundTile_01" symmetry="X" weight="1.0"/>
+<tile name="Assets/Prefabs/LevelTiles/Prairie/Prairie_GroundTile_04" symmetry="X" weight="1.0"/>
+<tile name="Assets/Prefabs/LevelTiles/Prairie/Prairie_GroundTile_02" symmetry="X" weight="1.0"/>
+<tile name="Assets/Prefabs/LevelTiles/Prairie/Prairie_GroundTile_05" symmetry="X" weight="1.0"/>
+	</tiles>
+<neighbors>  <neighbor left="Assets/Prefabs/LevelTiles/Prairie/Prairie_GroundTile_01 0" right="Assets/Prefabs/LevelTiles/Prairie/Prairie_GroundTile_01 0"/>
+  <neighbor left="Assets/Prefabs/LevelTiles/Prairie/Prairie_GroundTile_01 1" right="Assets/Prefabs/LevelTiles/Prairie/Prairie_GroundTile_01 1"/>
+  <neighbor left="Assets/Prefabs/LevelTiles/Prairie/Prairie_GroundTile_01 0" right="Assets/Prefabs/LevelTiles/Prairie/Prairie_GroundTile_02 0"/>
+  <neighbor left="Assets/Prefabs/LevelTiles/Prairie/Prairie_GroundTile_02 0" right="Assets/Prefabs/LevelTiles/Prairie/Prairie_GroundTile_01 0"/>
+  <neighbor left="Assets/Prefabs/LevelTiles/Prairie/Prairie_GroundTile_02 1" right="Assets/Prefabs/LevelTiles/Prairie/Prairie_GroundTile_02 1"/>
+  <neighbor left="Assets/Prefabs/LevelTiles/Prairie/Prairie_GroundTile_01 1" right="Assets/Prefabs/LevelTiles/Prairie/Prairie_GroundTile_02 1"/>
+  <neighbor left="Assets/Prefabs/LevelTiles/Prairie/Prairie_GroundTile_01 1" right="Assets/Prefabs/LevelTiles/Prairie/Prairie_GroundTile_05 1"/>
+  <neighbor left="Assets/Prefabs/LevelTiles/Prairie/Prairie_GroundTile_02 1" right="Assets/Prefabs/LevelTiles/Prairie/Prairie_GroundTile_04 1"/>
+  <neighbor left="Assets/Prefabs/LevelTiles/Prairie/Prairie_GroundTile_02 0" right="Assets/Prefabs/LevelTiles/Prairie/Prairie_GroundTile_02 0"/>
+  <neighbor left="Assets/Prefabs/LevelTiles/Prairie/Prairie_GroundTile_02 1" right="Assets/Prefabs/LevelTiles/Prairie/Prairie_GroundTile_01 1"/>
+  <neighbor left="Assets/Prefabs/LevelTiles/Prairie/Prairie_GroundTile_02 0" right="Assets/Prefabs/LevelTiles/Prairie/Prairie_GroundTile_05 0"/>
+  <neighbor left="Assets/Prefabs/LevelTiles/Prairie/Prairie_GroundTile_05 0" right="Assets/Prefabs/LevelTiles/Prairie/Prairie_GroundTile_02 0"/>
+  <neighbor left="Assets/Prefabs/LevelTiles/Prairie/Prairie_GroundTile_05 1" right="Assets/Prefabs/LevelTiles/Prairie/Prairie_GroundTile_02 1"/>
+  <neighbor left="Assets/Prefabs/LevelTiles/Prairie/Prairie_GroundTile_02 0" right="Assets/Prefabs/LevelTiles/Prairie/Prairie_GroundTile_04 0"/>
+  <neighbor left="Assets/Prefabs/LevelTiles/Prairie/Prairie_GroundTile_04 0" right="Assets/Prefabs/LevelTiles/Prairie/Prairie_GroundTile_01 0"/>
+  <neighbor left="Assets/Prefabs/LevelTiles/Prairie/Prairie_GroundTile_04 1" right="Assets/Prefabs/LevelTiles/Prairie/Prairie_GroundTile_01 1"/>
+  <neighbor left="Assets/Prefabs/LevelTiles/Prairie/Prairie_GroundTile_01 1" right="Assets/Prefabs/LevelTiles/Prairie/Prairie_GroundTile_04 1"/>
+  <neighbor left="Assets/Prefabs/LevelTiles/Prairie/Prairie_GroundTile_01 0" right="Assets/Prefabs/LevelTiles/Prairie/Prairie_GroundTile_04 0"/>
+  <neighbor left="Assets/Prefabs/LevelTiles/Prairie/Prairie_GroundTile_04 0" right="Assets/Prefabs/LevelTiles/Prairie/Prairie_GroundTile_02 0"/>
+  <neighbor left="Assets/Prefabs/LevelTiles/Prairie/Prairie_GroundTile_04 1" right="Assets/Prefabs/LevelTiles/Prairie/Prairie_GroundTile_02 1"/>
+	</neighbors>
+</set>
