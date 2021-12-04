@@ -8,33 +8,36 @@ public class TestGrid : MonoBehaviour
 {
     [SerializeField] private LibnoiseGraph worldGenGraph;
     [SerializeField] private int size;
-    
-    private List<GameObject> boxes = new List<GameObject>();
 
     [Button]
     private void Generate()
     {
-        foreach (var box in boxes)
+        Clear();
+        var generators = worldGenGraph.GetGenerators();
+        for (float i = 0; i < size; i++)
         {
+            for (float j = 0; j < size; j++)
+            {
+                foreach (var generator in generators)
+                {
+                    var res = generator.Run(new Vector3(i, 0, j));
+                    if (res) res.transform.parent = transform;
+                }
+            }
+        }
+    }
+
+    [Button]
+    private void Clear()
+    {
+        while (transform.childCount > 0)
+        {
+            var obj = transform.GetChild(0);
             if (Application.isEditor && !Application.isPlaying)
             {
-                DestroyImmediate(box);
+                DestroyImmediate(obj.gameObject);
             }
-            else Destroy(box);
-        }
-        boxes.Clear();
-        var generator = worldGenGraph.GetGenerator();
-        for (double i = 0; i < size; i++)
-        {
-            for (double j = 0; j < size; j++)
-            {
-                var val = 0;//generator.GetValue(j*0.1f, i*0.1f, 0);
-                if (val <= 0) continue;
-                var cube = GameObject.CreatePrimitive(PrimitiveType.Cube);
-                cube.transform.SetParent(transform);
-                cube.transform.localPosition = new Vector3((float)j, (float)val,(float)i);
-                boxes.Add(cube);
-            }
+            else Destroy(obj.gameObject); 
         }
     }
 }

@@ -1,6 +1,7 @@
 ﻿using Graph;
 using System.Linq;
 using UnityEngine;
+using WorldGen;
 
 namespace NoiseGraph
 {
@@ -9,14 +10,14 @@ namespace NoiseGraph
     {
         public RootModuleBase Root;
 
-        public SerializableModuleBase GetGenerator(GenericDictionary newgd = null)
+        public WorldGenOutput[] GetGenerators(GenericDictionary newgd = null)
         {
             if (newgd != null)
             {
                 gd = newgd;
             }
 
-            var gen = (SerializableModuleBase) Root.GetValue(Root.Ports.First());
+            var gen = Root.GetInputValues<WorldGenOutput>(Root.Ports.First().fieldName);
             return gen;
         }
     }

@@ -41,11 +41,11 @@ namespace NoiseGraph
                 size / 2, 
                 GetInputValue<SerializableModuleBase>("Input", Input));
 
-            map.GenerateSpherical(
-                south,
-                north,
+            map.GeneratePlanar(
                 west,
-                east);
+                east,
+                north,
+                south);
 
             tex = map.GetTexture(grad);
             tex.Apply();

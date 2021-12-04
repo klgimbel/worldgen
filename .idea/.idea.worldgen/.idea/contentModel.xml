@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ContentModelStore">
+    <e p="C:\Users\klg\AppData\Local\JetBrains\Rider2020.2\extResources" t="IncludeRecursive" />
+    <e p="C:\Users\klg\AppData\Local\JetBrains\Rider2020.2\resharper-host\Local\Transient\Rider\v202\SolutionCaches\_worldgen.285039075.00" t="ExcludeRecursive" />
+    <e p="C:\Users\klg\Documents\worldgen" t="IncludeRecursive">
+      <e p="Assembly-CSharp-Editor-firstpass.csproj" t="IncludeRecursive" />
+      <e p="Assembly-CSharp-firstpass.csproj" t="IncludeRecursive" />
+      <e p="Assembly-CSharp.csproj" t="IncludeRecursive" />
+      <e p="Assets" t="Include">
+        <e p="JMO Assets" t="Include">
+          <e p="Toony Colors Pro" t="Include">
+            <e p="Shaders Generated" t="Include">
+              <e p="Examples" t="Include">
+                <e p="Water" t="Include">
+                  <e p="Reflection.shader" t="Include" />
+                </e>
+              </e>
+            </e>
+          </e>
+        </e>
+        <e p="Plugins" t="Include">
+          <e p="CustomGraphs-XnodeEnhancement" t="Include">
+            <e p="Script" t="Include">
+              <e p="Editor" t="Include">
+                <e p="BlackBoardEditor.cs" t="Include" />
+                <e p="BlackBoardVariableEditor.cs" t="Include" />
+                <e p="DefaultGraphEditor.cs" t="Include" />
+                <e p="GraphRunnerEditor.cs" t="Include" />
+                <e p="RootIntEditor.cs" t="Include" />
+                <e p="SubGraphEditor.cs" t="Include" />
+              </e>
+              <e p="InputNodes" t="Include">
+                <e p="BoolNode.cs" t="Include" />
+                <e p="IntNode.cs" t="Include" />
+                <e p="StringNode.cs" t="Include" />
+              </e>
+              <e p="Inspector" t="Include">
+                <e p="DefaultGraph.cs" t="Include" />
+                <e p="Editor" t="Include">
+                  <e p="IntGraphEditor.cs" t="Include" />
+                </e>
+                <e p="GraphInterpretor.cs" t="Include" />
+                <e p="GraphRunner.cs" t="Include" />
+                <e p="IntGraph.cs" t="Include" />
+                <e p="ScriptableObjectExemple.cs" t="Include" />
+              </e>
+              <e p="Nodes" t="Include">
+                <e p="Base" t="Include">
+                  <e p="Branch.cs" t="Include" />
+                  <e p="Leaf.cs" t="Include" />
+                  <e p="NodeBase.cs" t="Include" />
+                  <e p="Root.cs" t="Include" />
+                </e>
+                <e p="Blackboard.cs" t="Include" />
+                <e p="BlackBoardVariable.cs" t="Include" />
+                <e p="Generator" t="Include">
+                  <e p="BillowNode.cs" t="Include" />
+                  <e p="CheckerNode.cs" t="Include" />
+                  <e p="PerlinNode.cs" t="Include" />
+                  <e p="RidgedMultifractalNode.cs" t="Include" />
+                  <e p="VoronoiNode.cs" t="Include" />
+                </e>
+                <e p="Graph" t="Include">
+                  <e p="Editor" t="Include">
+                    <e p="LibnoiseGraphEditor.cs" t="Include" />
+                  </e>
+                  <e p="LibnoiseGraph.cs" t="Include" />
+                  <e p="NoiseSO.cs" t="Include" />
+                  <e p="RootModuleBase.cs" t="Include" />
+                  <e p="WorldGenOutput.cs" t="Include" />
+                </e>
+                <e p="LibnoiseNode.cs" t="Include" />
+                <e p="Operator" t="Include">
+                  <e p="AbsNode.cs" t="Include" />
+                  <e p="AddNode.cs" t="Include" />
+                  <e p="BlendNode.cs" t="Include" />
+                  <e p="ClampNode.cs" t="Include" />
+                  <e p="CurveNode.cs" t="Include" />
+                  <e p="DisplaceNode.cs" t="Include" />
+                  <e p="ExponentNode.cs" t="Include" />
+                  <e p="InvertNode.cs" t="Include" />
+                  <e p="RotateNode.cs" t="Include" />
+                  <e p="ScaleBiasNode.cs" t="Include" />
+                  <e p="SelectNode.cs" t="Include" />
+                  <e p="SubstractNode.cs" t="Include" />
+                  <e p="TerraceNode.cs" t="Include" />
+                  <e p="TODO" t="Include">
+                    <e p="MaxNode.cs" t="Include" />
+                    <e p="MinNode.cs" t="Include" />
+                    <e p="MultiplyNode.cs" t="Include" />
+                    <e p="PowerNode.cs" t="Include" />
+                  </e>
+                  <e p="TranslateNode.cs" t="Include" />
+                  <e p="TurbulenceNode.cs" t="Include" />
+                </e>
+                <e p="Own" t="Include">
+                  <e p="BinarizeModule.cs" t="Include" />
+                  <e p="BinarizeModuleNode.cs" t="Include" />
+                </e>
+                <e p="RandomInt.cs" t="Include" />
+                <e p="RootInt.cs" t="Include" />
+                <e p="SubGraph.cs" t="Include" />
+                <e p="Utils" t="Include">
+                  <e p="Editor" t="Include">
+                    <e p="RendererEditor.cs" t="Include" />
+                  </e>
+                  <e p="LibnoiseVariables.cs" t="Include" />
+                  <e p="QualityNode.cs" t="Include" />
+                  <e p="Renderer.cs" t="Include" />
+                </e>
+              </e>
+              <e p="PaletColor.txt" t="Include" />
+              <e p="Serializer" t="Include">
+                <e p="Editor" t="Include">
+                  <e p="PropertyDrawers.cs" t="Include" />
+                  <e p="SerializerContainerEditor.cs" t="Include" />
+                </e>
+                <e p="SerializableBlackBoard.cs" t="Include" />
+                <e p="SerializerContainer.cs" t="Include" />
+              </e>
+              <e p="Variables" t="Include">
+                <e p="BlackBoardDictionnary.cs" t="Include" />
+                <e p="GenericDictionnary.cs" t="Include" />
+                <e p="Variables.cs" t="Include" />
+              </e>
+            </e>
+          </e>
+          <e p="LibNoise" t="Include">
+            <e p="COPYING.LESSER.txt" t="Include" />
+            <e p="COPYING.txt" t="Include" />
+            <e p="Generator" t="Include">
+              <e p="Billow.cs" t="Include" />
+              <e p="Checker.cs" t="Include" />
+              <e p="Const.cs" t="Include" />
+              <e p="Cylinders.cs" t="Include" />
+              <e p="Perlin.cs" t="Include" />
+              <e p="RidgedMultifractal.cs" t="Include" />
+              <e p="Spheres.cs" t="Include" />
+              <e p="Voronoi.cs" t="Include" />
+            </e>
+            <e p="GradientPresets.cs" t="Include" />
+            <e p="ModuleBase.cs" t="Include" />
+            <e p="Noise2D.cs" t="Include" />
+            <e p="Operator" t="Include">
+              <e p="Abs.cs" t="Include" />
+              <e p="Add.cs" t="Include" />
+              <e p="Blend.cs" t="Include" />
+              <e p="Cache.cs" t="Include" />
+              <e p="Clamp.cs" t="Include" />
+              <e p="Curve.cs" t="Include" />
+              <e p="Displace.cs" t="Include" />
+              <e p="Exponent.cs" t="Include" />
+              <e p="Invert.cs" t="Include" />
+              <e p="Max.cs" t="Include" />
+              <e p="Min.cs" t="Include" />
+              <e p="Multiply.cs" t="Include" />
+              <e p="Power.cs" t="Include" />
+              <e p="Rotate.cs" t="Include" />
+              <e p="Scale.cs" t="Include" />
+              <e p="ScaleBias.cs" t="Include" />
+              <e p="Select.cs" t="Include" />
+              <e p="Subtract.cs" t="Include" />
+              <e p="Terrace.cs" t="Include" />
+              <e p="Translate.cs" t="Include" />
+              <e p="Turbulence.cs" t="Include" />
+            </e>
+            <e p="Properties" t="Include">
+              <e p="AssemblyInfo.cs" t="Include" />
+            </e>
+            <e p="SerializableLibnoise" t="Include">
+              <e p="SerializableModuleBase.cs" t="Include" />
+            </e>
+            <e p="Utils.cs" t="Include" />
+          </e>
+          <e p="Sirenix" t="Include">
+            <e p="Assemblies" t="Include">
+              <e p="link.xml" t="Include" />
+              <e p="Sirenix.OdinInspector.Attributes.xml" t="Include" />
+              <e p="Sirenix.OdinInspector.Editor.xml" t="Include" />
+              <e p="Sirenix.Serialization.Config.xml" t="Include" />
+              <e p="Sirenix.Utilities.Editor.xml" t="Include" />
+              <e p="Sirenix.Utilities.xml" t="Include" />
+            </e>
+            <e p="Odin Inspector" t="Include">
+              <e p="Scripts" t="Include">
+                <e p="Editor" t="Include">
+                  <e p="AssemblyImportSettingsAutomation.cs" t="Include" />
+                  <e p="BuildAOTAutomation.cs" t="Include" />
+                  <e p="EnsureOdinInspectorDefine.cs" t="Include" />
+                  <e p="FixBrokenUnityObjectWrapperDrawer.cs" t="Include" />
+                  <e p="Sirenix.OdinInspector.CompatibilityLayer.Editor.asmdef" t="Include" />
+                  <e p="SyncListDrawer.cs" t="Include" />
+                  <e p="SyncVarAttributeDrawer.cs" t="Include" />
+                  <e p="Vector2IntMinMaxAttributeDrawer.cs" t="Include" />
+                  <e p="VectorIntDrawers.cs" t="Include" />
+                  <e p="VectorIntPropertyResolvers.cs" t="Include" />
+                </e>
+                <e p="SerializedNetworkBehaviour.cs" t="Include" />
+                <e p="Sirenix.OdinInspector.CompatibilityLayer.asmdef" t="Include" />
+                <e p="VectorIntFormatters.cs" t="Include" />
+              </e>
+            </e>
+            <e p="Readme.txt" t="Include" />
+          </e>
+        </e>
+        <e p="Scripts" t="Include">
+          <e p="worldgen" t="Include">
+            <e p="WorldGenNode.cs" t="Include" />
+          </e>
+        </e>
+        <e p="TestGrid.cs" t="Include" />
+        <e p="tiles.xml" t="Include" />
+      </e>
+      <e p="obj" t="ExcludeRecursive" />
+      <e p="Packages" t="ExcludeRecursive" />
+      <e p="Sirenix.OdinInspector.CompatibilityLayer.csproj" t="IncludeRecursive" />
+      <e p="Sirenix.OdinInspector.CompatibilityLayer.Editor.csproj" t="IncludeRecursive" />
+      <e p="Temp\Bin" t="ExcludeRecursive" />
+      <e p="worldgen.sln" t="IncludeFlat" />
+    </e>
+  </component>
+</project>

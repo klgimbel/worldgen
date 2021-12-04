@@ -293,7 +293,7 @@ namespace LibNoise
         {
             if (right <= left || bottom <= top)
             {
-                throw new ArgumentException("Invalid right/left or bottom/top combination");
+                throw new ArgumentException($"Invalid right/left or bottom/top combination: {right}/{left}, {bottom}/{top}");
             }
             if (_generator == null)
             {
