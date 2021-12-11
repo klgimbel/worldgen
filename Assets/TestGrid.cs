@@ -70,7 +70,6 @@ public class TestGrid : MonoBehaviour
     private void HideChunk(Vector2Int coordinate)
     {
         if (!activeChunks.TryGetValue(coordinate, out var activeChunk)) return;
-        Debug.Log("Hiding " + coordinate + " Player: " + playerChunk);
         activeChunk.SetActive(false);
         activeChunks.Remove(coordinate);
         inactiveChunks.Add(coordinate, activeChunk);
@@ -79,7 +78,6 @@ public class TestGrid : MonoBehaviour
     private void ShowChunk(Vector2Int coordinate)
     {
         if (!inactiveChunks.TryGetValue(coordinate, out var inactiveChunk)) return;
-        Debug.Log("Showing " + coordinate + " Player: " + playerChunk);
         inactiveChunk.SetActive(true);
         inactiveChunks.Remove(coordinate);
         activeChunks.Add(coordinate, inactiveChunk);

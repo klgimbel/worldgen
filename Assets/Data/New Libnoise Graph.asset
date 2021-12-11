@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Perlin
   m_EditorClassIdentifier: 
   graph: {fileID: 11400000}
-  position: {x: 856, y: 792}
+  position: {x: 1016, y: 712}
   ports:
     keys:
     - Output
@@ -159,7 +159,7 @@ MonoBehaviour:
   m_Name: Discard
   m_EditorClassIdentifier: 
   graph: {fileID: 11400000}
-  position: {x: 1096, y: 728}
+  position: {x: 1080, y: 1208}
   ports:
     keys:
     - Output
@@ -175,6 +175,9 @@ MonoBehaviour:
         Culture=neutral, PublicKeyToken=null
       connections:
       - fieldName: SourceA
+        node: {fileID: 5839012380123917359}
+        reroutePoints: []
+      - fieldName: SourceB
         node: {fileID: 6405512297426576973}
         reroutePoints: []
       _direction: 1
@@ -343,15 +346,15 @@ MonoBehaviour:
   tex: {fileID: 0}
   grad:
     serializedVersion: 2
-    key0: {r: 1, g: 1, b: 1, a: 1}
-    key1: {r: 0, g: 0, b: 0, a: 1}
+    key0: {r: 0, g: 0, b: 0, a: 1}
+    key1: {r: 1, g: 1, b: 1, a: 1}
     key2: {r: 0, g: 0, b: 0, a: 0}
     key3: {r: 0, g: 0, b: 0, a: 0}
     key4: {r: 0, g: 0, b: 0, a: 0}
     key5: {r: 0, g: 0, b: 0, a: 0}
     key6: {r: 0, g: 0, b: 0, a: 0}
     key7: {r: 0, g: 0, b: 0, a: 0}
-    ctime0: 0
+    ctime0: 32768
     ctime1: 65535
     ctime2: 0
     ctime3: 0
@@ -377,7 +380,7 @@ MonoBehaviour:
     y: 225
     width: 180
     height: 90
-  RenderTime: 109
+  RenderTime: 95
 --- !u!114 &-2408038062120072068
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -403,7 +406,7 @@ MonoBehaviour:
         Culture=neutral, PublicKeyToken=null
       connections:
       - fieldName: Output
-        node: {fileID: 2947860580784593933}
+        node: {fileID: 6405512297426576973}
         reroutePoints: []
       _direction: 0
       _connectionType: 1
@@ -441,7 +444,7 @@ MonoBehaviour:
   m_Name: Clamp
   m_EditorClassIdentifier: 
   graph: {fileID: 11400000}
-  position: {x: 1096, y: 920}
+  position: {x: 1304, y: 744}
   ports:
     keys:
     - Output
@@ -454,7 +457,7 @@ MonoBehaviour:
       _typeQualifiedName: SerializableModuleBase, Assembly-CSharp-firstpass, Version=1.0.0.0,
         Culture=neutral, PublicKeyToken=null
       connections:
-      - fieldName: SourceB
+      - fieldName: SourceA
         node: {fileID: 6405512297426576973}
         reroutePoints: []
       _direction: 1
@@ -491,7 +494,7 @@ MonoBehaviour:
       _connectionType: 1
       _typeConstraint: 2
       _dynamic: 0
-  Minimum: 0
+  Minimum: -1
   Maximum: 1
 --- !u!114 &-1519861807520366859
 MonoBehaviour:
@@ -549,7 +552,7 @@ MonoBehaviour:
   m_Name: Renderer
   m_EditorClassIdentifier: 
   graph: {fileID: 11400000}
-  position: {x: 2008, y: 1080}
+  position: {x: 2392, y: 904}
   ports:
     keys:
     - Input
@@ -560,7 +563,7 @@ MonoBehaviour:
         Culture=neutral, PublicKeyToken=null
       connections:
       - fieldName: Output
-        node: {fileID: 2947860580784593933}
+        node: {fileID: 6405512297426576973}
         reroutePoints: []
       _direction: 0
       _connectionType: 1
@@ -575,15 +578,15 @@ MonoBehaviour:
   tex: {fileID: 0}
   grad:
     serializedVersion: 2
-    key0: {r: 1, g: 1, b: 1, a: 1}
-    key1: {r: 0, g: 0, b: 0, a: 1}
+    key0: {r: 0, g: 0, b: 0, a: 1}
+    key1: {r: 1, g: 1, b: 1, a: 1}
     key2: {r: 0, g: 0, b: 0, a: 0}
     key3: {r: 0, g: 0, b: 0, a: 0}
     key4: {r: 0, g: 0, b: 0, a: 0}
     key5: {r: 0, g: 0, b: 0, a: 0}
     key6: {r: 0, g: 0, b: 0, a: 0}
     key7: {r: 0, g: 0, b: 0, a: 0}
-    ctime0: 0
+    ctime0: 32768
     ctime1: 65535
     ctime2: 0
     ctime3: 0
@@ -609,7 +612,7 @@ MonoBehaviour:
     y: 225
     width: 180
     height: 90
-  RenderTime: 97
+  RenderTime: 99
 --- !u!114 &-307644803424553431
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -648,7 +651,7 @@ MonoBehaviour:
   m_Name: Root Module Base
   m_EditorClassIdentifier: 
   graph: {fileID: 11400000}
-  position: {x: 2280, y: 680}
+  position: {x: 2888, y: 680}
   ports:
     keys:
     - Input
@@ -663,6 +666,9 @@ MonoBehaviour:
         reroutePoints: []
       - fieldName: _output
         node: {fileID: -2408038062120072068}
+        reroutePoints: []
+      - fieldName: _output
+        node: {fileID: 8416036528287454762}
         reroutePoints: []
       _direction: 0
       _connectionType: 0
@@ -705,9 +711,6 @@ MonoBehaviour:
         reroutePoints: []
       - fieldName: SourceB
         node: {fileID: 3849411130015741186}
-        reroutePoints: []
-      - fieldName: input
-        node: {fileID: 1097806933360971751}
         reroutePoints: []
       _direction: 1
       _connectionType: 0
@@ -788,7 +791,6 @@ MonoBehaviour:
   - {fileID: 6405512297426576973}
   - {fileID: -6978345579182054453}
   - {fileID: -2154945785247651402}
-  - {fileID: 2947860580784593933}
   - {fileID: -8293858679897945055}
   - {fileID: -6570831546996328238}
   - {fileID: 2397699044263938592}
@@ -799,6 +801,9 @@ MonoBehaviour:
   - {fileID: -3410476885810068}
   - {fileID: 1097806933360971751}
   - {fileID: 4135753249847354997}
+  - {fileID: 7058867209059584636}
+  - {fileID: 8416036528287454762}
+  - {fileID: 5839012380123917359}
   blackboard: {fileID: -307644803424553431}
   CanRun: 0
   Root: {fileID: -297710464106826243}
@@ -815,7 +820,7 @@ MonoBehaviour:
   m_Name: Grow
   m_EditorClassIdentifier: 
   graph: {fileID: 11400000}
-  position: {x: 168, y: 1240}
+  position: {x: 1624, y: 1016}
   ports:
     keys:
     - Output
@@ -831,8 +836,8 @@ MonoBehaviour:
       _typeQualifiedName: SerializableModuleBase, Assembly-CSharp-firstpass, Version=1.0.0.0,
         Culture=neutral, PublicKeyToken=null
       connections:
-      - fieldName: Input
-        node: {fileID: 4135753249847354997}
+      - fieldName: SourceA
+        node: {fileID: 7058867209059584636}
         reroutePoints: []
       _direction: 1
       _connectionType: 0
@@ -844,7 +849,7 @@ MonoBehaviour:
         Culture=neutral, PublicKeyToken=null
       connections:
       - fieldName: Output
-        node: {fileID: -3410476885810068}
+        node: {fileID: 6405512297426576973}
         reroutePoints: []
       _direction: 0
       _connectionType: 1
@@ -896,10 +901,10 @@ MonoBehaviour:
       _typeConstraint: 2
       _dynamic: 0
   width: 1
-  sampleRate: 0.5
-  threshold: 0.5
-  pass: 1
-  fail: 0
+  sampleRate: 1
+  threshold: 0
+  pass: 0.01
+  fail: -1
 --- !u!114 &2397699044263938592
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1006,74 +1011,6 @@ MonoBehaviour:
   Octaves: 1
   Seed: 44
   Quality: 2
---- !u!114 &2947860580784593933
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c089532340539964a94845b39d28925a, type: 3}
-  m_Name: Clamp
-  m_EditorClassIdentifier: 
-  graph: {fileID: 11400000}
-  position: {x: 1752, y: 1032}
-  ports:
-    keys:
-    - Output
-    - Input
-    - Minimum
-    - Maximum
-    values:
-    - _fieldName: Output
-      _node: {fileID: 2947860580784593933}
-      _typeQualifiedName: SerializableModuleBase, Assembly-CSharp-firstpass, Version=1.0.0.0,
-        Culture=neutral, PublicKeyToken=null
-      connections:
-      - fieldName: _generator
-        node: {fileID: -2408038062120072068}
-        reroutePoints: []
-      - fieldName: Input
-        node: {fileID: -529757313064827428}
-        reroutePoints: []
-      _direction: 1
-      _connectionType: 0
-      _typeConstraint: 2
-      _dynamic: 1
-    - _fieldName: Input
-      _node: {fileID: 2947860580784593933}
-      _typeQualifiedName: SerializableModuleBase, Assembly-CSharp-firstpass, Version=1.0.0.0,
-        Culture=neutral, PublicKeyToken=null
-      connections:
-      - fieldName: Output
-        node: {fileID: 6405512297426576973}
-        reroutePoints: []
-      _direction: 0
-      _connectionType: 1
-      _typeConstraint: 2
-      _dynamic: 0
-    - _fieldName: Minimum
-      _node: {fileID: 2947860580784593933}
-      _typeQualifiedName: System.Double, mscorlib, Version=4.0.0.0, Culture=neutral,
-        PublicKeyToken=b77a5c561934e089
-      connections: []
-      _direction: 0
-      _connectionType: 1
-      _typeConstraint: 2
-      _dynamic: 0
-    - _fieldName: Maximum
-      _node: {fileID: 2947860580784593933}
-      _typeQualifiedName: System.Double, mscorlib, Version=4.0.0.0, Culture=neutral,
-        PublicKeyToken=b77a5c561934e089
-      connections: []
-      _direction: 0
-      _connectionType: 1
-      _typeConstraint: 2
-      _dynamic: 0
-  Minimum: 0
-  Maximum: 1
 --- !u!114 &3638191077789844842
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1113,15 +1050,15 @@ MonoBehaviour:
   tex: {fileID: 0}
   grad:
     serializedVersion: 2
-    key0: {r: 1, g: 1, b: 1, a: 1}
-    key1: {r: 0, g: 0, b: 0, a: 1}
+    key0: {r: 0, g: 0, b: 0, a: 1}
+    key1: {r: 1, g: 1, b: 1, a: 1}
     key2: {r: 0, g: 0, b: 0, a: 0}
     key3: {r: 0, g: 0, b: 0, a: 0}
     key4: {r: 0, g: 0, b: 0, a: 0}
     key5: {r: 0, g: 0, b: 0, a: 0}
     key6: {r: 0, g: 0, b: 0, a: 0}
     key7: {r: 0, g: 0, b: 0, a: 0}
-    ctime0: 0
+    ctime0: 32768
     ctime1: 65535
     ctime2: 0
     ctime3: 0
@@ -1147,7 +1084,7 @@ MonoBehaviour:
     y: 225
     width: 180
     height: 90
-  RenderTime: 97
+  RenderTime: 95
 --- !u!114 &3849411130015741186
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1220,7 +1157,7 @@ MonoBehaviour:
   m_Name: Renderer
   m_EditorClassIdentifier: 
   graph: {fileID: 11400000}
-  position: {x: 472, y: 1336}
+  position: {x: 2216, y: 1352}
   ports:
     keys:
     - Input
@@ -1231,7 +1168,7 @@ MonoBehaviour:
         Culture=neutral, PublicKeyToken=null
       connections:
       - fieldName: Output
-        node: {fileID: 1097806933360971751}
+        node: {fileID: 5839012380123917359}
         reroutePoints: []
       _direction: 0
       _connectionType: 1
@@ -1246,15 +1183,15 @@ MonoBehaviour:
   tex: {fileID: 0}
   grad:
     serializedVersion: 2
-    key0: {r: 1, g: 1, b: 1, a: 1}
-    key1: {r: 0, g: 0, b: 0, a: 1}
+    key0: {r: 0, g: 0, b: 0, a: 1}
+    key1: {r: 1, g: 1, b: 1, a: 1}
     key2: {r: 0, g: 0, b: 0, a: 0}
     key3: {r: 0, g: 0, b: 0, a: 0}
     key4: {r: 0, g: 0, b: 0, a: 0}
     key5: {r: 0, g: 0, b: 0, a: 0}
     key6: {r: 0, g: 0, b: 0, a: 0}
     key7: {r: 0, g: 0, b: 0, a: 0}
-    ctime0: 0
+    ctime0: 32768
     ctime1: 65535
     ctime2: 0
     ctime3: 0
@@ -1280,7 +1217,66 @@ MonoBehaviour:
     y: 225
     width: 180
     height: 90
-  RenderTime: 343
+  RenderTime: 1379
+--- !u!114 &5839012380123917359
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 53e312ee54f9dd041af78831678d568b, type: 3}
+  m_Name: Multiply
+  m_EditorClassIdentifier: 
+  graph: {fileID: 11400000}
+  position: {x: 1960, y: 1656}
+  ports:
+    keys:
+    - Output
+    - SourceA
+    - SourceB
+    values:
+    - _fieldName: Output
+      _node: {fileID: 5839012380123917359}
+      _typeQualifiedName: SerializableModuleBase, Assembly-CSharp-firstpass, Version=1.0.0.0,
+        Culture=neutral, PublicKeyToken=null
+      connections:
+      - fieldName: Input
+        node: {fileID: 4135753249847354997}
+        reroutePoints: []
+      - fieldName: _generator
+        node: {fileID: 8416036528287454762}
+        reroutePoints: []
+      _direction: 1
+      _connectionType: 0
+      _typeConstraint: 2
+      _dynamic: 1
+    - _fieldName: SourceA
+      _node: {fileID: 5839012380123917359}
+      _typeQualifiedName: SerializableModuleBase, Assembly-CSharp-firstpass, Version=1.0.0.0,
+        Culture=neutral, PublicKeyToken=null
+      connections:
+      - fieldName: Output
+        node: {fileID: -8293858679897945055}
+        reroutePoints: []
+      _direction: 0
+      _connectionType: 1
+      _typeConstraint: 2
+      _dynamic: 0
+    - _fieldName: SourceB
+      _node: {fileID: 5839012380123917359}
+      _typeQualifiedName: SerializableModuleBase, Assembly-CSharp-firstpass, Version=1.0.0.0,
+        Culture=neutral, PublicKeyToken=null
+      connections:
+      - fieldName: Output
+        node: {fileID: 7058867209059584636}
+        reroutePoints: []
+      _direction: 0
+      _connectionType: 1
+      _typeConstraint: 2
+      _dynamic: 0
 --- !u!114 &6405512297426576973
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1294,7 +1290,7 @@ MonoBehaviour:
   m_Name: Multiply
   m_EditorClassIdentifier: 
   graph: {fileID: 11400000}
-  position: {x: 1480, y: 840}
+  position: {x: 1720, y: 824}
   ports:
     keys:
     - Output
@@ -1307,7 +1303,16 @@ MonoBehaviour:
         Culture=neutral, PublicKeyToken=null
       connections:
       - fieldName: Input
-        node: {fileID: 2947860580784593933}
+        node: {fileID: -529757313064827428}
+        reroutePoints: []
+      - fieldName: _generator
+        node: {fileID: -2408038062120072068}
+        reroutePoints: []
+      - fieldName: input
+        node: {fileID: 1097806933360971751}
+        reroutePoints: []
+      - fieldName: SourceB
+        node: {fileID: 7058867209059584636}
         reroutePoints: []
       _direction: 1
       _connectionType: 0
@@ -1319,7 +1324,7 @@ MonoBehaviour:
         Culture=neutral, PublicKeyToken=null
       connections:
       - fieldName: Output
-        node: {fileID: -8293858679897945055}
+        node: {fileID: -2154945785247651402}
         reroutePoints: []
       _direction: 0
       _connectionType: 1
@@ -1331,7 +1336,7 @@ MonoBehaviour:
         Culture=neutral, PublicKeyToken=null
       connections:
       - fieldName: Output
-        node: {fileID: -2154945785247651402}
+        node: {fileID: -8293858679897945055}
         reroutePoints: []
       _direction: 0
       _connectionType: 1
@@ -1411,6 +1416,112 @@ MonoBehaviour:
   displacement: 5
   Seed: 3333
   distance: 0
+--- !u!114 &7058867209059584636
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: beba33c86daca974f88a1db5989faeb6, type: 3}
+  m_Name: Substract
+  m_EditorClassIdentifier: 
+  graph: {fileID: 11400000}
+  position: {x: 1944, y: 1336}
+  ports:
+    keys:
+    - Output
+    - SourceA
+    - SourceB
+    values:
+    - _fieldName: Output
+      _node: {fileID: 7058867209059584636}
+      _typeQualifiedName: SerializableModuleBase, Assembly-CSharp-firstpass, Version=1.0.0.0,
+        Culture=neutral, PublicKeyToken=null
+      connections:
+      - fieldName: SourceB
+        node: {fileID: 5839012380123917359}
+        reroutePoints: []
+      _direction: 1
+      _connectionType: 0
+      _typeConstraint: 2
+      _dynamic: 1
+    - _fieldName: SourceA
+      _node: {fileID: 7058867209059584636}
+      _typeQualifiedName: SerializableModuleBase, Assembly-CSharp-firstpass, Version=1.0.0.0,
+        Culture=neutral, PublicKeyToken=null
+      connections:
+      - fieldName: Output
+        node: {fileID: 1097806933360971751}
+        reroutePoints: []
+      _direction: 0
+      _connectionType: 1
+      _typeConstraint: 2
+      _dynamic: 0
+    - _fieldName: SourceB
+      _node: {fileID: 7058867209059584636}
+      _typeQualifiedName: SerializableModuleBase, Assembly-CSharp-firstpass, Version=1.0.0.0,
+        Culture=neutral, PublicKeyToken=null
+      connections:
+      - fieldName: Output
+        node: {fileID: 6405512297426576973}
+        reroutePoints: []
+      _direction: 0
+      _connectionType: 1
+      _typeConstraint: 2
+      _dynamic: 0
+--- !u!114 &8416036528287454762
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d467db7ad13d47a989635e8f3dc77cb2, type: 3}
+  m_Name: World Gen
+  m_EditorClassIdentifier: 
+  graph: {fileID: 11400000}
+  position: {x: 2664, y: 1352}
+  ports:
+    keys:
+    - _generator
+    - _output
+    values:
+    - _fieldName: _generator
+      _node: {fileID: 8416036528287454762}
+      _typeQualifiedName: SerializableModuleBase, Assembly-CSharp-firstpass, Version=1.0.0.0,
+        Culture=neutral, PublicKeyToken=null
+      connections:
+      - fieldName: Output
+        node: {fileID: 5839012380123917359}
+        reroutePoints: []
+      _direction: 0
+      _connectionType: 1
+      _typeConstraint: 2
+      _dynamic: 0
+    - _fieldName: _output
+      _node: {fileID: 8416036528287454762}
+      _typeQualifiedName: WorldGen.WorldGenOutput, Assembly-CSharp-firstpass, Version=1.0.0.0,
+        Culture=neutral, PublicKeyToken=null
+      connections:
+      - fieldName: Input
+        node: {fileID: -297710464106826243}
+        reroutePoints: []
+      _direction: 1
+      _connectionType: 1
+      _typeConstraint: 2
+      _dynamic: 0
+  _useHeight: 0
+  _threshold: 0
+  _prefab: {fileID: 3384017992103899833, guid: 122399e22249667438d9648ae579a3ba, type: 3}
+  _output:
+    useHeight: 0
+    threshold: 0
+    prefab: {fileID: 0}
 --- !u!114 &8933394345032350591
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1450,15 +1561,15 @@ MonoBehaviour:
   tex: {fileID: 0}
   grad:
     serializedVersion: 2
-    key0: {r: 1, g: 1, b: 1, a: 1}
-    key1: {r: 0, g: 0, b: 0, a: 1}
+    key0: {r: 0, g: 0, b: 0, a: 1}
+    key1: {r: 1, g: 1, b: 1, a: 1}
     key2: {r: 0, g: 0, b: 0, a: 0}
     key3: {r: 0, g: 0, b: 0, a: 0}
     key4: {r: 0, g: 0, b: 0, a: 0}
     key5: {r: 0, g: 0, b: 0, a: 0}
     key6: {r: 0, g: 0, b: 0, a: 0}
     key7: {r: 0, g: 0, b: 0, a: 0}
-    ctime0: 0
+    ctime0: 32768
     ctime1: 65535
     ctime2: 0
     ctime3: 0
@@ -1484,4 +1595,4 @@ MonoBehaviour:
     y: 225
     width: 180
     height: 90
-  RenderTime: 8
+  RenderTime: 6
