@@ -15,11 +15,11 @@ public class TestGrid : MonoBehaviour
 
     private Vector2Int playerChunk;
     
-    private Dictionary<Vector2Int, List<GameObject>> chunks = new Dictionary<Vector2Int, List<GameObject>>();
+    private Dictionary<Vector2Int, GameObject> chunks = new Dictionary<Vector2Int, GameObject>();
     
-    private Dictionary<Vector2Int, List<GameObject>> activeChunks = new Dictionary<Vector2Int, List<GameObject>>();
+    private Dictionary<Vector2Int, GameObject> activeChunks = new Dictionary<Vector2Int, GameObject>();
     
-    private Dictionary<Vector2Int, List<GameObject>> inactiveChunks = new Dictionary<Vector2Int, List<GameObject>>();
+    private Dictionary<Vector2Int, GameObject> inactiveChunks = new Dictionary<Vector2Int, GameObject>();
 
     private WorldGenOutput[] generators;
     
@@ -31,85 +31,73 @@ public class TestGrid : MonoBehaviour
 
     private void Update()
     {
-        playerChunk = GetPlayerChunk();
-        
-        for (int i = playerChunk.x-viewDistance; i < playerChunk.x+viewDistance; i++)
+        UpdatePlayerChunk();
+        for (int i = playerChunk.x-viewDistance; i <= playerChunk.x+viewDistance; i++)
         {
-            for (int j = playerChunk.y-viewDistance; j < playerChunk.y+viewDistance; j++)
+            for (int j = playerChunk.y-viewDistance; j <= playerChunk.y+viewDistance; j++)
             {
-                GenerateChunk(playerChunk + new Vector2Int(i,j));
+                GenerateOrShowChunk(new Vector2Int(i,j));
             }
         }
-        var hideList = new List<Vector2Int>();
-        foreach (var chunk in activeChunks)
-        {
-            if (Math.Abs(chunk.Key.x - playerChunk.x) > viewDistance ||
-                Math.Abs(chunk.Key.y - playerChunk.y) > viewDistance)
-            {
-                hideList.Add(chunk.Key);
-            }
-        }
+        var hideList = activeChunks.Keys
+            .Where(chunk => 
+                Math.Abs(chunk.x - playerChunk.x) > viewDistance || 
+                Math.Abs(chunk.y - playerChunk.y) > viewDistance)
+            .ToList();
         foreach (var coord in hideList)
         {
             HideChunk(coord);
         }
     }
 
-    private Vector2Int GetPlayerChunk() => new Vector2Int(Mathf.RoundToInt(player.position.x / _chunkSize),
+    private Vector2Int UpdatePlayerChunk() => playerChunk = new Vector2Int(Mathf.RoundToInt(player.position.x / _chunkSize),
         Mathf.RoundToInt(player.position.z / _chunkSize));
 
-    private void GenerateChunk(Vector2Int coordinate)
+    private void GenerateOrShowChunk(Vector2Int coordinate)
     {
-        if (chunks.TryGetValue(coordinate, out var list))
+        if (chunks.TryGetValue(coordinate, out var chunk))
         {
             ShowChunk(coordinate);
         }
         else
         {
-            list = GenerateList(coordinate * _chunkSize, (coordinate + Vector2Int.one) * _chunkSize);
-            chunks.Add(coordinate, list);
-            activeChunks.Add(coordinate, list);
+            chunk = GenerateFromTo(coordinate * _chunkSize, (coordinate + Vector2Int.one) * _chunkSize);
+            chunks.Add(coordinate, chunk);
+            activeChunks.Add(coordinate, chunk);
         }
     }
 
     private void HideChunk(Vector2Int coordinate)
     {
-        if (!activeChunks.TryGetValue(coordinate, out var activeList)) return;
-        Debug.Log("Hiding " + coordinate);
-        
-        foreach (var obj in activeList)
-        {
-            obj.SetActive(false);
-        }
-
+        if (!activeChunks.TryGetValue(coordinate, out var activeChunk)) return;
+        Debug.Log("Hiding " + coordinate + " Player: " + playerChunk);
+        activeChunk.SetActive(false);
         activeChunks.Remove(coordinate);
-        inactiveChunks.Add(coordinate, activeList);
+        inactiveChunks.Add(coordinate, activeChunk);
     }
 
     private void ShowChunk(Vector2Int coordinate)
     {
-        if (!inactiveChunks.TryGetValue(coordinate, out var inactiveList)) return;
-        Debug.Log("Showing " + coordinate);
-        
-        foreach (var obj in inactiveList)
-        {
-            obj.SetActive(true);
-        }
-
+        if (!inactiveChunks.TryGetValue(coordinate, out var inactiveChunk)) return;
+        Debug.Log("Showing " + coordinate + " Player: " + playerChunk);
+        inactiveChunk.SetActive(true);
         inactiveChunks.Remove(coordinate);
-        activeChunks.Add(coordinate, inactiveList);
+        activeChunks.Add(coordinate, inactiveChunk);
     }
     
     [Button]
     private void Generate(Vector2Int from, Vector2Int to)
     {
         generators = worldGenGraph.GetGenerators();
-        GenerateList(from, to);
+        GenerateFromTo(from, to);
     }
     
-    private List<GameObject> GenerateList(Vector2Int from, Vector2Int to)
+    private GameObject GenerateFromTo(Vector2Int from, Vector2Int to)
     {
-        var list = new List<GameObject>();
+        var parent = new GameObject();
+        parent.transform.position = new Vector3(from.x, 0, from.y);
+        parent.name = $"{from} - {to}";
+        parent.transform.parent = transform;
         for (float i = from.x; i < to.x; i++)
         {
             for (float j = from.y; j < to.y; j++)
@@ -118,12 +106,11 @@ public class TestGrid : MonoBehaviour
                 {
                     var res = generator.Run(new Vector3(i, 0, j));
                     if (!res) continue;
-                    res.transform.parent = transform;
-                    list.Add(res);
+                    res.transform.parent = parent.transform;
                 }
             }
         }
-        return list;
+        return parent;
     }
 
     [Button]

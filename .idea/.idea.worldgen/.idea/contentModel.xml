@@ -209,6 +209,8 @@
           <e p="worldgen" t="Include">
             <e p="Discard.cs" t="Include" />
             <e p="DiscardNode.cs" t="Include" />
+            <e p="Grow.cs" t="Include" />
+            <e p="GrowNode.cs" t="Include" />
             <e p="WorldGenNode.cs" t="Include" />
           </e>
         </e>
@@ -265,7 +267,6 @@
           </e>
         </e>
         <e p="TestGrid.cs" t="Include" />
-        <e p="tiles.xml" t="Include" />
       </e>
       <e p="obj" t="ExcludeRecursive" />
       <e p="Packages" t="ExcludeRecursive" />
