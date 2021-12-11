@@ -20,23 +20,18 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e77d78b4-e08a-47ad-b013-d2de2ff9d876" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/WorldGen.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/WorldGen/WorldGenNode.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/WorldGen/WorldGenNode.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/WorldGen/Discard.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/WorldGen/Discard.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.worldgen/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.worldgen/.idea/contentModel.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.worldgen/.idea/indexLayout.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.worldgen/.idea/indexLayout.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.worldgen/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.worldgen/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Data/New Libnoise Graph.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Data/New Libnoise Graph.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/CustomGraphs-XnodeEnhancement/Script/Nodes/AILeaf.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/CustomGraphs-XnodeEnhancement/Script/Nodes/AILeaf.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/CustomGraphs-XnodeEnhancement/Script/Nodes/Graph/LibnoiseGraph.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/CustomGraphs-XnodeEnhancement/Script/Nodes/Graph/LibnoiseGraph.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/CustomGraphs-XnodeEnhancement/Script/Nodes/Graph/PerlinGraphRunner.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/CustomGraphs-XnodeEnhancement/Script/Nodes/Graph/PerlinGraphRunner.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/CustomGraphs-XnodeEnhancement/Script/Nodes/Graph/RootModuleBase.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/CustomGraphs-XnodeEnhancement/Script/Nodes/Graph/RootModuleBase.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/CustomGraphs-XnodeEnhancement/Script/Nodes/Graph/SimplePerlin.asset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/CustomGraphs-XnodeEnhancement/Script/Nodes/Graph/SimplePerlin.asset.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/CustomGraphs-XnodeEnhancement/Script/Nodes/Graph/WorldGenOutput.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/CustomGraphs-XnodeEnhancement/Script/Nodes/Graph/WorldGenOutput.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/CustomGraphs-XnodeEnhancement/Script/Nodes/SubGraph.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/CustomGraphs-XnodeEnhancement/Script/Nodes/SubGraph.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/CustomGraphs-XnodeEnhancement/Script/Nodes/Utils/Renderer.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/CustomGraphs-XnodeEnhancement/Script/Nodes/Utils/Renderer.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/LibNoise/Noise2D.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/LibNoise/Noise2D.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Main.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Main.unity" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/TestGrid.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/TestGrid.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Packages/manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/Packages/manifest.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Packages/packages-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/Packages/packages-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/ProjectSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/ProjectSettings.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -62,8 +57,10 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/WorldGen/WorldGenNode.cs" />
         <option value="$PROJECT_DIR$/Assets/Plugins/CustomGraphs-XnodeEnhancement/Script/Nodes/Utils/Renderer.cs" />
         <option value="$PROJECT_DIR$/Assets/Plugins/LibNoise/Noise2D.cs" />
-        <option value="$PROJECT_DIR$/Assets/TestGrid.cs" />
         <option value="$PROJECT_DIR$/Assets/Plugins/CustomGraphs-XnodeEnhancement/Script/Nodes/Graph/WorldGenOutput.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/WorldGen/DiscardNode.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/WorldGen/Discard.cs" />
+        <option value="$PROJECT_DIR$/Assets/TestGrid.cs" />
       </list>
     </option>
   </component>
@@ -114,6 +111,9 @@
       <updated>1638654292195</updated>
       <workItem from="1638654298336" duration="1301000" />
       <workItem from="1638655632631" duration="4384000" />
+      <workItem from="1638811652863" duration="2894000" />
+      <workItem from="1638889441068" duration="1855000" />
+      <workItem from="1639233599801" duration="4227000" />
     </task>
     <servers />
   </component>
@@ -142,9 +142,10 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="461" y="169" key="SettingsEditor/0.0.1920.1050@0.0.1920.1050" timestamp="1638654897743" />
-    <state x="623" y="227" width="672" height="678" key="search.everywhere.popup" timestamp="1638658921791">
+    <state x="623" y="227" width="672" height="678" key="search.everywhere.popup" timestamp="1638811897201">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
+    <state x="623" y="227" width="672" height="678" key="search.everywhere.popup/-1920.179.1920.1050/0.0.1920.1050@0.0.1920.1050" timestamp="1638811897201" />
     <state x="623" y="227" width="672" height="678" key="search.everywhere.popup/0.0.1920.1050@0.0.1920.1050" timestamp="1638658921791" />
   </component>
 </project>
